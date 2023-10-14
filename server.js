@@ -5,7 +5,7 @@ const message = process.env.MESSAGE || 'world';
 
 const server = http.createServer((_, res) => {
   res.writeHead(200, {'Content-Type': 'text/plain'});
-  res.write(`Hello ${message}\n`);
+  res.write(`Hello ${message} (v2)\n`);
 });
 
 server.listen(port);
